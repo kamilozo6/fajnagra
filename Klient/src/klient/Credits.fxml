@@ -5,21 +5,27 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="643.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="klient.FXMLDocumentController">
-    <children>
+   <children>
       <ImageView fitHeight="496.0" fitWidth="643.0" pickOnBounds="true">
          <image>
             <Image url="@background.jpg" />
          </image>
       </ImageView>
-        <Button fx:id="credits" alignment="CENTER" layoutX="241.0" layoutY="342.0" onAction="#handleButtonAction" prefHeight="53.0" prefWidth="162.0" text="Credits" />
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <ImageView fitHeight="150.0" fitWidth="625.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@logo.png" />
          </image>
       </ImageView>
-      <Button fx:id="start" layoutX="241.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="53.0" prefWidth="162.0" text="Start" />
-    </children>
+      <Label alignment="CENTER" layoutX="119.0" layoutY="164.0" prefHeight="127.0" prefWidth="407.0" text="By kamilozo" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="465.0" prefHeight="17.0" prefWidth="139.0" text="Version alpha 2017r." textFill="#f8f7f7" />
+      <Button fx:id="back" layoutX="34.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="119.0" text="Back" />
+   </children>
 </AnchorPane>
